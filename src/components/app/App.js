@@ -1,52 +1,20 @@
 import React from "react";
-import randomcolor from "randomcolor";
+// import randomcolor from "randomcolor";
 //import { random } from "lodash";
 import "./App.css";
-import Button from "./components/Button";
+// import Button from "../button/Button";
+import QuoteGen from "../quotes/QuoteGenerator";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      quotes: [],
-      loading: false,
-      color: "",
-    };
-  }
+function App() {
 
-  componentDidMount() {
-    this.setState({ loading: true });
-    fetch(
-      "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          quotes: data,
-          loading: false,
-        });
-      });
-  }
-  //RANDOM COLOR PICKER
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.quote !== this.state.quote) {
-      const newColor = randomcolor();
-      this.setState({ color: newColor });
-    }
-  }
-
-  render() {
-    const loadingText = this.state.loading ? "loading..." : "this.state.quotes.quote";
+  //const loadingText = this.state.loading ? "loading..." : "{this.state.allQuotes[0]}";
     return (
       <div className="App" id="quote-box">
-        {loadingText}
-        <Button
-          buttonDisplayName="Next Quote"
-          clickHandler={this.nextQuoteClickHandler}/>
+        <QuoteGen />
       </div>
     );
   }
-}
+
 
 // class App extends Component {
 //   constructor() {
