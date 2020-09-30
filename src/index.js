@@ -6,7 +6,9 @@ import App from './components/app/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div style={{}} >
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

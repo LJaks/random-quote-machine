@@ -1,0 +1,33 @@
+.buttons {
+    width: 450px;
+    margin-bottom: 30px;
+    display: block;
+}
+button{
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 3px 1px 6px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  opacity: 0.9;
+  color: black;
+  font-weight: bold;
+  box-shadow: 3px 1px 6px rgba(0, 0, 0, 0.6);
+}
+#tweet-quote {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+#new-quote {
+  float: right;
+}
+

@@ -9,9 +9,7 @@ function App() {
 
   //const loadingText = this.state.loading ? "loading..." : "{this.state.allQuotes[0]}";
     return (
-      <div className="App" id="quote-box">
         <QuoteGen />
-      </div>
     );
   }
 

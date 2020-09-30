@@ -1,0 +1,33 @@
+#quote-box {
+    margin: 0;
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    padding: 40px 50px;
+    display: block;
+    margin: 30px 20px;
+    background-color: #fff;
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+  
+#text {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  }
+  #author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+    font-weight: lighter;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+  }
+  
